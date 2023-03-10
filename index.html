@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>What is the “official” name of JavaScript?</h1>
+<form>
+    <input type="text" placeholder="Answer" id="answer">
+    <button type="submit" onclick="answerCheck()">Submit</button>
+    <button type="reset">Reset</button>
+</form>
+</body>
+</html>
+
+<script>
+    function answerCheck() {
+        let ans;
+        ans = document.getElementById('answer').value;
+        if (ans == "ECMAScript") {
+            alert("Correct!")
+        } else {
+            alert("Didn’t know? It's ECMAScript!")
+        }
+    }
+</script>
+
+<!--Sử dụng cấu trúc if…else, viết chương trình nhập vào một chuỗi câu trả lời cho câu hỏi “What is the “official” -->
+<!--name of JavaScript?”. Nếu câu trả lời nhập vào là “ECMAScript”,  thì hiển thị thông báo: “Right!”, -->
+<!--ngược lại hiển thị thông báo: “Didn’t know? ECMAScript!”-->
